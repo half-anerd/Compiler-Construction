@@ -1289,21 +1289,21 @@ void printCompressionPercentage()
 
 // FOR TESTING PURPOSES
 
-// int main()
-// {
-// 	fp = startLexer("p3.txt");
-// 	initTable();
-// 	while (1)
-// 	{
-// 		tokenInfo pleasework = getNextToken();
-// 		if(pleasework.tid!=LEX_ERROR && pleasework.tid!=TK_COMMENT)
-// 		{
-// 		printf("Line no. %d\t\tLexeme %s\t\t\t\t\t\t", pleasework.lineNo, pleasework.lexeme);
-// 		//printToken(pleasework.tid);
-// 		printf("\n");
-// 		if (pleasework.tid == SENTINEL)
-// 			break;
-// 		}
-// 	}
-// 	return 0;
-// }
+int main()
+{
+	fp = startLexer("p3.txt");
+	initTable();
+	while (1)
+	{
+		tokenInfo pleasework = getNextToken();
+		if(pleasework.tid!=LEX_ERROR && pleasework.tid!=TK_COMMENT)
+		{
+		printf("Line no. %d\t\tLexeme %s\t\t\t\t\t\t", pleasework.lineNo, pleasework.lexeme);
+		//printToken(pleasework.tid);
+		printf("\n");
+		if (pleasework.tid == SENTINEL)
+			break;
+		}
+	}
+	return 0;
+}
